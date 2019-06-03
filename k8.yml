@@ -1,0 +1,13 @@
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  name: rest-site
+  labels:
+    app: web
+spec:
+  containers:
+    - name: rest-Service
+      image: springio:SpringBootRestApiPosts
+      ports:
+        - containerPort: 8090
