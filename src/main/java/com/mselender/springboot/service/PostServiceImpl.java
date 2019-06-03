@@ -72,7 +72,7 @@ public class PostServiceImpl implements PostService {
 	}
 
 	public void deletePostById(long id) {
-		
+
 		for (Iterator<Post> iterator = posts.iterator(); iterator.hasNext(); ) {
 		    Post post = iterator.next();
 		    if (post.getId() == id) {
