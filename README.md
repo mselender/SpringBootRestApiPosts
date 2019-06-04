@@ -18,3 +18,28 @@ or
 kubectl apply -f k8pod.yaml
 
 kubectl port-forward posts-pod 8090:8090
+
+REST API:
+
+Retrieve/retrieve all - GET
+localhost:8090/SpringBootRestApi/api/post/{id}
+localhost:8090/SpringBootRestApi/api/post/
+
+Posts count - GET
+localhost:8090/SpringBootRestApi/postsCount/
+
+Unique users count - GET
+localhost:8090/SpringBootRestApi/uniqueUsersCount/
+
+Create - POST
+localhost:8090/SpringBootRestApi/post/
+payload: {"id":1,"userId":1,"title":"some text","body":"some text"}
+
+Update - PUT
+localhost:8090/SpringBootRestApi/post/{id}
+payload: {"id":1,"userId":1,"title":"some text","body":"some text"}
+
+Delete and delete all - DELETE
+localhost:8090/SpringBootRestApi/api/post/{id}
+localhost:8090/SpringBootRestApi/api/post/
+
